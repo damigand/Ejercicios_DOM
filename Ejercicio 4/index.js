@@ -16,5 +16,5 @@ focusElement.addEventListener('focus', () => showInput(focusElement));
 //1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
 let focusElements = document.querySelectorAll('input:not(.focus)'); //:not(.focus) porque .focus ya tiene el evento.
 focusElements.forEach((x) => {
-   x.addEventListener('focus', () => showInput(x));
+   x.addEventListener('input', () => showInput(x));
 });
